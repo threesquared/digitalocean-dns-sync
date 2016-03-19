@@ -1,0 +1,23 @@
+{
+  "name": "digitalocean-dns-sync",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "author": "Ben Speakman <ben@3sq.re>",
+  "dependencies": {
+    "dns-zonefile": "^0.1.12",
+    "do-wrapper": "^3.3.3",
+    "glob": "^7.0.3",
+    "limiter": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-preset-es2015": "^6.6.0"
+  },
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "bin": {
+    "digitalocean-dns-sync": "./bin/digitalocean-dns-sync"
+  }
+}
